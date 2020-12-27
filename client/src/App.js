@@ -5,6 +5,7 @@ import Posts from './components/Posts/Posts';
 import {useDispatch} from 'react-redux';
 import React, {useEffect, useState} from 'react';
 import {getPosts} from './actions/posts';
+import './index.css';
 
 function App() {
   const classes = useStyles();

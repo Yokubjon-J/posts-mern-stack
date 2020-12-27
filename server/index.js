@@ -13,6 +13,10 @@ app.use(bodyParser.urlencoded({limit: '35mb', extended: true}));
 app.use(cors());
 app.use('/posts', postRoutes);
 
+app.get('/', (req,res)=>{
+        res.send('this is a backyard');
+})
+
 const PORT = process.env.PORT || 5000;
 mongoose.connect(process.env.URL_CONNECTION, {useNewUrlParser:true, useUnifiedTopology:true})
         .then(()=>app.listen(PORT, ()=>console.log(`Server listening on PORT ${PORT}`)))

@@ -13,7 +13,7 @@ function Posts({setCurrentId}) {
             <Grid className={classes.container} container alignItems='stretch' spacing={3}>
                 {posts.map((post)=>{
                     return (
-                    <Grid item key={post.id} xs={12} sm={6} md={6}>
+                    <Grid item key={post._id} xs={12} sm={6} md={6}>
                         <Post post={post} setCurrentId={setCurrentId} />
                     </Grid> )
                 })}

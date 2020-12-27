@@ -14,6 +14,6 @@ export default makeStyles(()=>({
       },
       image: {
         marginLeft: '15px',
-        display: 'inlineBlock'
+        display: 'inline-block'
       },
 }))
